@@ -1,0 +1,141 @@
+@import ../../../styles/helpers
+
+.section
+    padding: 50px 0
+    border-top: 1px solid $neutrals6
+    +d
+        min-height: 576px
+    +m
+        display: block
+        min-height: auto
+        padding: 64px 0
+        text-align: center
+    +dark
+        border-color: $neutrals3
+
+.wrap
+    position: relative
+    z-index: 3
+    max-width: 550px
+    +d
+        max-width: 420px
+    +m
+        max-width: 100%
+        margin-bottom: 40px
+
+.stage
+    margin-bottom: 12px
+    +hairline-1
+    color: $neutrals4
+
+.title
+    margin-bottom: 20px
+    text-align: center
+    +m
+        font-size: 48px
+
+.text
+    margin: 20px 0
+    +body-2
+    color: $neutrals4
+
+.btns
+    display: flex
+    +m
+        display: block
+
+.button
+    +m
+        width: 100%
+    &:not(:last-child)
+        margin-right: 16px
+        +m
+            margin: 0 0 16px
+
+.gallery
+    position: absolute
+    top: 50%
+    right: calc(50% - 560px)
+    width: 684px
+    transform: translateY(-50%)
+    pointer-events: none
+    +x
+        right: calc(50% - 520px)
+        width: 550px
+    +d
+        right: calc(50% - 440px)
+        width: 470px
+    +m
+        position: static
+        transform: translateY(0)
+    +s
+        width: auto
+        margin: 0 0 0 -22px
+
+.preview
+    &:first-child
+        position: relative
+        z-index: 2
+    &:nth-child(2)
+        right: -11%
+        bottom: -3.5%
+        z-index: 3
+        width: 47%
+    &:not(:first-child)
+        position: absolute
+    img
+        width: 100%
+
+.title2
+    padding-top: 5px
+
+.polygon
+    display: flex
+    margin: 50px 0
+    justify-content: space-between
+    .innerCard
+        width: calc( 33.33% - 30px )
+        display: flex
+        align-items: center
+        &:first-child
+            justify-content: flex-start
+        &:last-child
+            justify-content: flex-end
+        &:nth-child(2)
+            justify-content: center
+        img
+            width: 60px
+            height: 60px
+            object-fit: cover
+            border-radius: 5px
+            margin-right: 20px
+        h3
+            font-size: 27px
+            font-weight: 500
+            letter-spacing: 1px
+
+.howork
+    font-size: 18px
+    font-weight: 400
+
+.accodnigPanel
+    .mainTabs
+        border-bottom: 1px solid #E6E8EC
+        border-color: #353945
+        &:last-child
+            border: none
+        .tab
+            display: flex
+            align-items: center
+            justify-content: space-between
+            cursor: pointer
+            padding: 20px 0
+        .accordionContent
+            padding-bottom: 10px
+
+.justifyCenter
+    justify-content: center
+.justifyFlexEnd
+    justify-content: flex-end
+.justifySpaceBetween
+    justify-content: space-between
